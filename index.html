@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+        #mycanvas{
+            background-image: url(Assets/bg.jpg);
+            border: 15px solid green;
+        }
+        #scoreBoard{
+            position: absolute;
+            margin-left: 820px;
+        }
+        #scoreBox{
+            margin-top: 70px;
+            margin-right: 60px;
+            position: absolute;
+            top: 9px;
+            right: 200px;
+            font-size: 39px;
+            font-weight: bold;
+            font-family: 'New Tegomin', serif;
+            /* background-color:rgb(163, 255, 163); */
+            color: whitesmoke;
+        }
+        #highScore{
+            margin-top: 90px;
+            margin-right: 50px;
+            position: absolute;
+            top: 59px;
+            right: 140px;
+            font-size: 39px;
+            font-weight: bold;
+            font-family: 'New Tegomin', serif;
+            /* background-color: rgb(163, 255, 163); */
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div id="scoreBoard"><img src="Assets/scoreboard.jpg" width="700" height="400"> </div>
+    <div id="scoreBox"> Score : 0</div>
+    <div id="highScore"> High Score : 0</div>
+    <canvas id="mycanvas"></canvas>
+    <script src="snake.js"></script>
+    
+</body>
+</html>
